@@ -10,7 +10,7 @@ const port = process.env.PORT;
 app.use(cors());
 app.use(express.json());
 mongoose
-  .connect("mongodb://localhost:27017/vocally")
+  .connect("mongodb://127.0.0.1:27017/vocally")
   .then(() => {
     console.log("DB Connetion Successfull");
   })
