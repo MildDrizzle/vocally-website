@@ -1,0 +1,22 @@
+button {
+  color: var(--lighter-gray);
+  background-color: transparent;
+  border: 0.15rem solid var(--lighter-gray);
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    background-color: #9b00e1;
+    color: white;
+    border-color: #9b00e1;
+  }
+}
+
+.form-button {
+  width: var(--form-components-width);
+  border: 1px solid var(--lighter-gray);
+  color: white;
+}

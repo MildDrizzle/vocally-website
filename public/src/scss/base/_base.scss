@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --background: #10141e;
+  --font-family: "Open Sans", sans-serif;
+  --default-margin: 0 8rem;
+  --seondary-color: #b1b6ba;
+  --lighter-gray: #9a9da4;
+  --form-components-width: 400px;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    --default-margin: 0 2rem;
+    --form-components-width: 80vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: var(--background);
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--background);
+  width: 0.2rem;
+  &-thumb {
+    background-color: var(--seondary-color);
+    border-radius: 1rem;
+  }
+}

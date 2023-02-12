@@ -1,0 +1,24 @@
+.social-icons {
+  li {
+    cursor: pointer;
+    color: var(--lighter-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: white;
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    li {
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

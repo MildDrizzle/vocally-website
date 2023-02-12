@@ -1,0 +1,36 @@
+.mobile {
+  margin: var(--default-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100vh;
+  gap: 10rem;
+  .illustration {
+    img {
+      height: 30rem;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+    height: max-content;
+    .container {
+      align-items: center;
+    }
+    .illustration {
+      img {
+        max-inline-size: 100%;
+        block-size: auto;
+      }
+    }
+  }
+}

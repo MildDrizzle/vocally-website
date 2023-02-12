@@ -1,0 +1,10 @@
+.contact-info {
+  gap: 3rem;
+  li {
+    color: var(--lighter-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+  }
+}
